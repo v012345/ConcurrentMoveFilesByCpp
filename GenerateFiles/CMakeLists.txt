@@ -1,4 +1,7 @@
 cmake_minimum_required(VERSION 3.10.0)
 project(GenerateFiles)
 set(CMAKE_EXE_LINKER_FLAGS "-static")
+set(CMAKE_ARCHIVE_OUTPUT_DIRECTORY ${CMAKE_BINARY_DIR}/lib)
+set(CMAKE_LIBRARY_OUTPUT_DIRECTORY ${CMAKE_BINARY_DIR}/lib)
+set(CMAKE_RUNTIME_OUTPUT_DIRECTORY ${CMAKE_BINARY_DIR}/bin)
 add_executable(${PROJECT_NAME} main.cpp)
