@@ -1,0 +1,5 @@
+cmake_minimum_required(VERSION 3.10.0)
+project(ConcurrentMoveFilesByCpp)
+add_subdirectory(RemoveFiles)
+add_subdirectory(GenerateFiles)
+add_subdirectory(MoveFiles)
